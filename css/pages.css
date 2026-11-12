@@ -480,12 +480,62 @@
 }
 
 /* ---------- Leistungsseiten ---------- */
+/* Leistungsseiten: Fotos sind Handyaufnahmen im Hochformat (9:16) */
+.leistung-hero .container {
+  display: grid;
+  gap: var(--space-6);
+  align-items: center;
+}
+
 .leistung-hero h1 {
   margin-bottom: var(--space-5);
 }
 
+/* Leistungsliste neben dem Bild (Hochformat-Seiten) */
+.leistung-hero__text h2 {
+  margin-bottom: var(--space-4);
+  font-size: clamp(1.25rem, 2.5vw, 1.6rem);
+}
+
+.leistung-hero__text ul {
+  display: grid;
+  gap: var(--space-2);
+  padding-left: 1.25rem;
+}
+
 .leistung-hero .compare {
-  max-height: 70vh;
+  aspect-ratio: 9 / 16;
+  width: min(100%, 420px);
+  margin-inline: auto;
+}
+
+@media (min-width: 900px) {
+  .leistung-hero .container {
+    grid-template-columns: minmax(280px, 420px) 1fr;
+    gap: var(--space-8);
+  }
+
+  .leistung-hero .compare {
+    /* nie höher als der sichtbare Bildschirm; Bild links, Text rechts */
+    order: -1;
+    width: min(100%, calc(85vh * 9 / 16));
+    margin-inline: 0;
+    justify-self: start;
+  }
+}
+
+/* Nur Sanierung: Fotos im Querformat (16:9), Text oben, Bild darunter */
+.leistung-hero.leistung-hero--landscape .container {
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+
+.leistung-hero.leistung-hero--landscape .compare {
+  order: 0;
+  aspect-ratio: 16 / 9;
+  width: min(100%, calc(70vh * 16 / 9));
+  margin-inline: 0;
+  justify-self: start;
 }
 
 .faq details {

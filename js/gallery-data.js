@@ -8,8 +8,8 @@ export const galleryData = [
       {
         before: '/images/leistungen/fliesenlegen/vorher-1.jpg',
         after: '/images/leistungen/fliesenlegen/nachher-1.jpg',
-        altBefore: 'Fliesenbereich vorher - [PLATZHALTER]',
-        altAfter: 'Fliesenbereich nachher - [PLATZHALTER]'
+        altBefore: 'Dachgeschoss-Bad im Rohbau mit Dachfenstern, Estrich und offenen Leitungen vor den Fliesenarbeiten',
+        altAfter: 'Dachgeschoss-Bad nach den Fliesenarbeiten mit großformatigen grauen Fliesen an Wand und Boden und Ablaufrinne'
       }
     ]
   },
@@ -19,9 +19,9 @@ export const galleryData = [
     items: [
       {
         before: '/images/leistungen/sanierung/vorher-1.jpg',
-        after: '/images/leistungen/sanierung/nachher-1.jpg',
-        altBefore: 'Sanierung vorher - [PLATZHALTER]',
-        altAfter: 'Sanierung nachher - [PLATZHALTER]'
+        after: '/images/leistungen/sanierung/nachher-1.png',
+        altBefore: 'Objekt vor der Sanierung',
+        altAfter: 'Objekt nach der Sanierung'
       }
     ]
   },
@@ -32,8 +32,8 @@ export const galleryData = [
       {
         before: '/images/leistungen/badsanierung/vorher-1.jpg',
         after: '/images/leistungen/badsanierung/nachher-1.jpg',
-        altBefore: 'Bad vorher - [PLATZHALTER]',
-        altAfter: 'Bad nachher - [PLATZHALTER]'
+        altBefore: 'Gäste-WC mit alten grauen Wandfliesen und braun gemustertem Bodenbelag vor der Sanierung',
+        altAfter: 'Gäste-WC nach der Sanierung mit Wand-WC und großformatigen Fliesen an Wand und Boden'
       }
     ]
   },
@@ -43,9 +43,9 @@ export const galleryData = [
     items: [
       {
         before: '/images/leistungen/maler-tapezierarbeiten/vorher-1.jpg',
-        after: '/images/leistungen/maler-tapezierarbeiten/nachher-1.jpg',
-        altBefore: 'Wand vorher - [PLATZHALTER]',
-        altAfter: 'Wand nachher - [PLATZHALTER]'
+        after: '/images/leistungen/maler-tapezierarbeiten/nachher-1.png',
+        altBefore: 'Wand vor den Malerarbeiten',
+        altAfter: 'Wand nach den Maler- und Tapezierarbeiten'
       }
     ]
   },
@@ -56,8 +56,8 @@ export const galleryData = [
       {
         before: '/images/leistungen/trockenbau/vorher-1.jpg',
         after: '/images/leistungen/trockenbau/nachher-1.jpg',
-        altBefore: 'Trockenbau vorher - [PLATZHALTER]',
-        altAfter: 'Trockenbau nachher - [PLATZHALTER]'
+        altBefore: 'Flur im Rohbauzustand mit freiliegenden Leitungen und Putzschäden vor dem Trockenbau',
+        altAfter: 'Renovierter Flur mit glatten weißen Wänden und Decke, Einbaustrahlern und Boden in Holzoptik'
       }
     ]
   },
@@ -66,10 +66,10 @@ export const galleryData = [
     title: 'Balkon',
     items: [
       {
-        before: '/images/leistungen/balkon/vorher-1.jpg',
+        before: '/images/leistungen/balkon/vorher-1.png',
         after: '/images/leistungen/balkon/nachher-1.jpg',
-        altBefore: 'Balkon vorher - [PLATZHALTER]',
-        altAfter: 'Balkon nachher - [PLATZHALTER]'
+        altBefore: 'Balkon vor der Sanierung mit altem Fliesenbelag',
+        altAfter: 'Balkon nach der Sanierung mit neuem grauen Fliesenbelag und verzinktem Geländer'
       }
     ]
   }

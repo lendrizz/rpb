@@ -59,7 +59,7 @@ export default async function handler(req, res) {
     hits.push(now);
     globalThis.__rate.set(key, hits);
 
-    const apiKey = process.env.RESEND_API_KEY;
+    const apiKey = process.env.RESEND_API_KEY || process.env.RP_BAU;
     if (!apiKey) {
       return res.status(500).json({ error: 'Server nicht konfiguriert. Bitte anrufen.' });
     }

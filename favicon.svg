@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#282420"/>
+  <!-- Haus-Symbol aus dem RP-Bau-Logo, ohne Schriftzug -->
+  <g fill="#D4A84B" transform="translate(32 32) scale(0.1) translate(-507.5 -247.5)">
+    <polygon points="275,280 507.5,45 740,280 670,280 507.5,120 345,280"/>
+    <rect x="612" y="95" width="48" height="70"/>
+    <rect x="308" y="290" width="40" height="160"/>
+    <rect x="648" y="290" width="40" height="160"/>
+    <rect x="308" y="410" width="380" height="40"/>
+    <rect x="433" y="238" width="62" height="62"/>
+    <rect x="503" y="238" width="62" height="62"/>
+    <rect x="433" y="308" width="62" height="62"/>
+    <rect x="503" y="308" width="62" height="62"/>
+  </g>
+</svg>
