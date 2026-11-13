@@ -1,11 +1,15 @@
 // js/gallery-data.js
-// Zentrale Bilddaten für Galerie und Leistungsseiten. Pfade unter /images/ ablegen.
+// Vorher/Nachher-Vergleiche je Gewerk. Pfade unter /images/ ablegen.
+// orientation: 'portrait' (Handyfotos 9:16) oder 'landscape' (16:9)
+// Die zusätzlichen Nachher-Bilder je Gewerk stehen in js/gallery-photos.js
+// (wird von scripts/build-gallery.mjs erzeugt).
 export const galleryData = [
   {
     id: 'fliesenlegen',
-    title: 'Fliesenlegen',
+    title: 'Fliesen & Bodenbeläge',
     items: [
       {
+        orientation: 'portrait',
         before: '/images/leistungen/fliesenlegen/vorher-1.jpg',
         after: '/images/leistungen/fliesenlegen/nachher-1.jpg',
         altBefore: 'Dachgeschoss-Bad im Rohbau mit Dachfenstern, Estrich und offenen Leitungen vor den Fliesenarbeiten',
@@ -18,6 +22,7 @@ export const galleryData = [
     title: 'Sanierung',
     items: [
       {
+        orientation: 'landscape',
         before: '/images/leistungen/sanierung/vorher-1.jpg',
         after: '/images/leistungen/sanierung/nachher-1.png',
         altBefore: 'Objekt vor der Sanierung',
@@ -30,6 +35,7 @@ export const galleryData = [
     title: 'Badsanierung',
     items: [
       {
+        orientation: 'portrait',
         before: '/images/leistungen/badsanierung/vorher-1.jpg',
         after: '/images/leistungen/badsanierung/nachher-1.jpg',
         altBefore: 'Gäste-WC mit alten grauen Wandfliesen und braun gemustertem Bodenbelag vor der Sanierung',
@@ -42,7 +48,8 @@ export const galleryData = [
     title: 'Maler- und Tapezierarbeiten',
     items: [
       {
-        before: '/images/leistungen/maler-tapezierarbeiten/vorher-1.jpg',
+        orientation: 'landscape',
+        before: '/images/leistungen/maler-tapezierarbeiten/vorher-1.png',
         after: '/images/leistungen/maler-tapezierarbeiten/nachher-1.png',
         altBefore: 'Wand vor den Malerarbeiten',
         altAfter: 'Wand nach den Maler- und Tapezierarbeiten'
@@ -54,6 +61,7 @@ export const galleryData = [
     title: 'Trockenbau',
     items: [
       {
+        orientation: 'portrait',
         before: '/images/leistungen/trockenbau/vorher-1.jpg',
         after: '/images/leistungen/trockenbau/nachher-1.jpg',
         altBefore: 'Flur im Rohbauzustand mit freiliegenden Leitungen und Putzschäden vor dem Trockenbau',
@@ -66,6 +74,7 @@ export const galleryData = [
     title: 'Balkon',
     items: [
       {
+        orientation: 'landscape',
         before: '/images/leistungen/balkon/vorher-1.png',
         after: '/images/leistungen/balkon/nachher-1.jpg',
         altBefore: 'Balkon vor der Sanierung mit altem Fliesenbelag',

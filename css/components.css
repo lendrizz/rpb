@@ -310,6 +310,82 @@ main.section > .container > p {
   color: var(--color-background);
 }
 
+/* Dropdown "Leistungen" */
+.site-nav .has-submenu {
+  position: relative;
+}
+
+.submenu-toggle {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-1) 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submenu-toggle::after {
+  content: '';
+  display: inline-block;
+  width: 0.45em;
+  height: 0.45em;
+  margin-left: 0.5em;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
+  transition: transform 0.2s;
+}
+
+.submenu-toggle[aria-expanded="true"]::after {
+  transform: translateY(1px) rotate(-135deg);
+}
+
+.submenu-toggle[aria-current] {
+  box-shadow: inset 0 -3px 0 var(--color-accent);
+}
+
+.site-nav .submenu {
+  display: none;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+  position: absolute;
+  top: 100%;
+  left: -1rem;
+  min-width: 280px;
+  padding: var(--space-2);
+  background: var(--color-background);
+  border-top: 3px solid var(--color-accent);
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  box-shadow: var(--shadow-md);
+  z-index: 60;
+}
+
+.site-nav .has-submenu.is-open > .submenu {
+  display: flex;
+}
+
+.site-nav .submenu a {
+  display: block;
+  padding: 0.6rem var(--space-4);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.site-nav .submenu a::after {
+  display: none;
+}
+
+.site-nav .submenu a:hover,
+.site-nav .submenu a[aria-current="page"] {
+  background: var(--color-surface);
+}
+
 /* Footer */
 .site-footer {
   background-color: var(--color-primary);
@@ -735,6 +811,23 @@ main.section > .container > p {
   .site-nav a.btn {
     display: block;
     text-align: center;
+  }
+
+  .submenu-toggle {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .site-nav .submenu {
+    position: static;
+    min-width: 0;
+    margin-top: var(--space-2);
+    padding: 0 0 0 var(--space-4);
+    border-top: 0;
+    border-left: 3px solid var(--color-accent);
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
   }
 
   .sticky-cta {
