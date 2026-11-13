@@ -85,7 +85,7 @@ input, textarea { caret-color: var(--color-accent-ink); }
 .site-slogan strong { font: 500 1.35rem/1 var(--font-heading); color: var(--color-background); }
 .site-slogan span { color: var(--color-accent); font-size: 0.72rem; letter-spacing: 0.08em; }
 .site-nav a:not(.btn)::after { bottom: -0.35rem; }
-.site-nav ul { gap: clamp(0.65rem, 2.2vw, 2rem); }
+.site-nav > ul { gap: clamp(0.65rem, 2.2vw, 2rem); }
 .site-nav .submenu {
   background: var(--color-primary);
   border: 1px solid var(--color-dark-line);
@@ -368,7 +368,7 @@ main.document-page h2 { font-size: clamp(1.55rem, 3vw, 2.2rem); }
     background: var(--color-primary);
     padding: var(--space-4);
     border-bottom: 1px solid var(--color-dark-line);
-    max-height: calc(100dvh - 76px);
+    max-height: calc(100dvh - 76px - env(safe-area-inset-bottom));
     overflow-y: auto;
   }
   .site-nav.is-open { display: block; }
