@@ -67,7 +67,7 @@ Quelle: `credentials.md` (lokal, gitignored). Werte statisch in HTML und dynamis
 - Hero-Hintergrund: `--color-hero-bg` in `css/tokens.css` ist an den Bildrand angeglichen (#282420). Bei neuen Bildern Randfarbe prüfen.
 - Inhaberbild im Hero: `images/hero/inhaber.png` (freigestellt, transparent, KI-Karikatur). Position/Größe in `css/pages.css` (`.hero-house__owner`).
 - Hero- und Leistungsbilder: Pfade in den jeweiligen `leistungen/*.html` anpassen. `<picture>`/`srcset`, `width`/`height`, `alt` setzen.
-- Galerie: Einträge zentral in `js/gallery-data.js` pflegen (Tätigkeitsfeld, Vorher/Nachher-Pfade, Alt-Texte). Seite rendert daraus.
+- Galerie: Vorher-Nachher-Vergleiche in `js/gallery-data.js` pflegen. Zusätzliche Nachher-Fotos (JPG, PNG oder WebP) in `images/leistungen/<gewerk>/galerie/` ablegen. Danach auf dem Mac im Projektordner `node scripts/build-gallery.mjs` ausführen. Das Skript erstellt die Fotoliste und komprimierte Vorschauen. Bei der Veröffentlichung die aktualisierte Fotoliste, Vorschauen und Fotos mitnehmen.
 - Inhaberfoto (Seite „Über uns“): `images/ueber-uns/robert-palumbo.*`, Pfad in `js/config.js` und `ueber-uns.html`.
 - Logo: `images/logo/` (hell/dunkel Varianten prüfen).
 

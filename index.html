@@ -3,25 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>RP-Bau | Fliesen, Sanierung & Badsanierung in Wiesloch</title>
-  <meta name="description" content="RP-Bau in Wiesloch: Fliesenlegen, Sanierung, Badsanierung, Maler- und Tapezierarbeiten, Trockenbau und Balkon. Seit 20 Jahren. Einzugsgebiet 100 km. Anfrage per Formular oder WhatsApp.">
+  <title>RP-Bau | Fliesen, Bodenbeläge &amp; Sanierung in Wiesloch</title>
+  <meta name="description" content="RP-Bau in Wiesloch: Fliesen, Laminat, Sanierung, Badsanierung, Maler- und Tapezierarbeiten, Trockenbau und Balkon. Seit 20 Jahren. Einzugsgebiet 100 km. Anfrage per Formular oder WhatsApp.">
   <meta property="og:title" content="RP-Bau | Handwerker des Vertrauens in Wiesloch">
-  <meta property="og:description" content="Fliesen, Sanierung, Bad, Malerarbeiten, Trockenbau und Balkon aus Wiesloch. Seit 20 Jahren.">
+  <meta property="og:description" content="Fliesen, Bodenbeläge, Sanierung, Bad, Malerarbeiten, Trockenbau und Balkon aus Wiesloch. Seit 20 Jahren.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://rp-bau.info/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="/favicon.ico" sizes="48x48">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/css/tokens.css">
   <link rel="stylesheet" href="/css/base.css">
   <link rel="stylesheet" href="/css/components.css">
   <link rel="stylesheet" href="/css/pages.css">
+  <link rel="stylesheet" href="/css/design.css?v=6">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
     "name": "RP-Bau",
-    "description": "Fliesenlegen, Sanierung, Badsanierung, Maler- und Tapezierarbeiten, Trockenbau, Balkon",
+    "description": "Fliesen & Bodenbeläge (Wand- und Bodenfliesen, Laminat), Sanierung, Badsanierung, Maler- und Tapezierarbeiten, Trockenbau, Balkon",
     "telephone": "+4917676897808",
     "email": "anfrage@rp-bau.info",
     "url": "https://rp-bau.info/",
@@ -42,131 +41,216 @@
   <header class="site-header">
     <div class="container site-header__inner">
       <a class="site-logo" href="/index.html" aria-label="RP-Bau Startseite">
-        <img src="/images/logo/logo.png" alt="RP-Bau Logo" width="180" height="48">
+        <img src="/images/logo/logo-web.png" alt="RP-Bau Logo" width="180" height="48">
       </a>
-      <p class="site-slogan"><strong>Handwerk aus Leidenschaft</strong><span>Seit 20 Jahren</span></p>
+      <p class="site-slogan"><strong>RP-Bau</strong><span>Meisterbetrieb</span></p>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menü</button>
       <nav id="site-nav" class="site-nav" aria-label="Hauptnavigation">
         <ul>
           <li><a href="/index.html">Start</a></li>
-          <li><a href="/leistungen/fliesenlegen.html">Leistungen</a></li>
+          <li class="has-submenu">
+            <button class="submenu-toggle" type="button" aria-expanded="false" aria-controls="submenu-leistungen">Leistungen</button>
+            <ul id="submenu-leistungen" class="submenu">
+              <li><a href="/leistungen/fliesenlegen.html">Fliesen &amp; Bodenbeläge</a></li>
+              <li><a href="/leistungen/sanierung.html">Sanierung</a></li>
+              <li><a href="/leistungen/badsanierung.html">Badsanierung</a></li>
+              <li><a href="/leistungen/maler-tapezierarbeiten.html">Maler- und Tapezierarbeiten</a></li>
+              <li><a href="/leistungen/trockenbau.html">Trockenbau</a></li>
+              <li><a href="/leistungen/balkon.html">Balkon</a></li>
+            </ul>
+          </li>
           <li><a href="/galerie.html">Galerie</a></li>
           <li><a href="/ueber-uns.html">Über uns</a></li>
-          <li><a href="#kontakt" class="btn btn--primary">Anfrage</a></li>
+          <li><a href="/index.html#kontakt" class="btn btn--primary">Projekt anfragen</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="container hero__inner">
-        <div class="hero__text">
-          <p class="hero__claim">Seit 20 Jahren. Handwerker aus Leidenschaft.</p>
-          <h1>Wand. Boden. Bad. Handwerk mit Anspruch.</h1>
-          <div class="hero__actions">
-            <a href="#kontakt" class="btn btn--primary">Anfrage senden</a>
-            <a href="https://wa.me/4917676897808?text=Guten%20Tag%2C%20ich%20m%C3%B6chte%20ein%20Projekt%20anfragen." class="btn--icon btn btn--whatsapp" data-wa-link><img src="/images/icons/whatsapp.svg" alt="" width="20" height="20" aria-hidden="true" loading="lazy" referrerpolicy="no-referrer"><span>WhatsApp</span></a>
-          </div>
-          <p class="hero__hint">Was möchtest du verändern? Wähle einen Raum und entdecke, wie Robert dich unterstützen kann.</p>
-        </div>
-
-        <div class="hero-house-wrap">
-          <div class="hero-house" data-hero-house>
-            <picture>
-              <source media="(min-width: 768px)" srcset="/images/hero/hero-haus-desktop.jpg" width="2576" height="1438">
-              <img src="/images/hero/hero-haus-mobile.jpg" alt="Haus im Querschnitt mit den Gewerken von RP-Bau: Trockenbau, Badsanierung, Maler- und Tapezierarbeiten, Fliesenlegen, Sanierung und Balkon" width="1438" height="2576" fetchpriority="high" decoding="async">
-            </picture>
-            <a class="hero-house__owner" href="/ueber-uns.html" data-hero-owner aria-label="Über uns: Robert Palumbo, Inhaber">
-              <img src="/images/hero/inhaber.png" alt="Robert Palumbo, Inhaber von RP-Bau (Karikatur)" width="429" height="1083">
-            </a>
-            <span class="hero-house__label" data-hero-label aria-hidden="true"></span>
-          </div>
-
-          <ul class="hero-chips" aria-label="Leistungen von RP-Bau">
-            <li><a href="/leistungen/fliesenlegen.html" data-hero-chip="fliesenlegen">Fliesenlegen</a></li>
-            <li><a href="/leistungen/sanierung.html" data-hero-chip="sanierung">Sanierung</a></li>
-            <li><a href="/leistungen/badsanierung.html" data-hero-chip="badsanierung">Badsanierung</a></li>
-            <li><a href="/leistungen/maler-tapezierarbeiten.html" data-hero-chip="maler">Maler- und Tapezierarbeiten</a></li>
-            <li><a href="/leistungen/trockenbau.html" data-hero-chip="trockenbau">Trockenbau</a></li>
-            <li><a href="/leistungen/balkon.html" data-hero-chip="balkon">Balkon</a></li>
-            <li><a href="/ueber-uns.html" data-hero-chip="owner">Über uns</a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section trust">
-      <div class="container">
-        <h2>So wird deine Idee umgesetzt</h2>
-        <ol class="steps steps--row">
-          <li><strong>Anfrage</strong><span>Per Formular, WhatsApp oder Telefon. Robert meldet sich innerhalb von 24 Stunden zurück.</span></li>
-          <li><strong>Persönliche Besprechung</strong><span>Wünsche und Umfang werden gemeinsam geklärt, bei Bedarf direkt vor Ort.</span></li>
-          <li><strong>Transparentes Angebot</strong><span>Klar kalkuliert und verständlich aufgeschlüsselt, mit verbindlichem Preis.</span></li>
-          <li><strong>Fachgerechte Umsetzung</strong><span>Zuverlässige Ausführung, abgestimmte Termine und eine ordentlich hinterlassene Baustelle.</span></li>
-        </ol>
-
-        <ul class="trust-strip">
-          <li><strong>Ein Ansprechpartner</strong><span>Von der Beratung bis zur Abnahme.</span></li>
-          <li><strong>Meisterbetrieb</strong><span>Fliesenlegermeister Robert Palumbo.</span></li>
-          <li><strong>Region</strong><span>Von Frankfurt bis Stuttgart, von Karlsruhe bis Heilbronn.</span></li>
-        </ul>
-
-        <div class="cta-band">
-          <div>
-            <h3>Bereit für dein Projekt?</h3>
-            <p>Beschreibe dein Vorhaben kurz und nenne den Ort. Mit Fotos kann Robert deine Anfrage schneller und genauer einschätzen.</p>
-          </div>
-          <div class="cta-actions">
+    <section class="showcase" aria-labelledby="showcase-title">
+      <div class="showcase__layout container">
+        <div class="showcase__copy">
+          <h1 id="showcase-title">Wir machen mehr aus <em>deinen Räumen.</em></h1>
+          <p>Fliesen, Bodenbeläge und Sanierung für private und gewerbliche Projekte. Mit Fliesenlegermeister Robert Palumbo aus Wiesloch.</p>
+          <div class="showcase__actions">
             <a href="#kontakt" class="btn btn--primary">Projekt anfragen</a>
-            <a href="https://wa.me/4917676897808?text=Guten%20Tag%2C%20ich%20m%C3%B6chte%20ein%20Projekt%20anfragen." class="btn--icon btn btn--whatsapp" data-wa-link><img src="/images/icons/whatsapp.svg" alt="" width="20" height="20" aria-hidden="true" loading="lazy" referrerpolicy="no-referrer"><span>WhatsApp</span></a>
+            <a href="/galerie.html" class="text-link">Referenzen ansehen</a>
           </div>
+        </div>
+        <div class="showcase__project">
+          <figure>
+            <div class="hero-map">
+              <img class="hero-map__house" src="/images/hero/hausquerschnitt-fotorealistisch.jpg" alt="Hausquerschnitt mit ausgebautem Dachgeschoss, Bad, Wohnraum, Balkon und gefliestem Eingang" width="1402" height="1122" fetchpriority="high">
+              <button class="hero-map__hint" type="button" hidden>
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M8 13V4a1.5 1.5 0 0 1 3 0v7-2a1.5 1.5 0 0 1 3 0v2-1a1.5 1.5 0 0 1 3 0v2a1.5 1.5 0 0 1 3 0v4a6 6 0 0 1-6 6h-1a5 5 0 0 1-4-2l-4.5-6a1.5 1.5 0 0 1 2.3-1.9L8 13Z"/>
+                </svg>
+                <span class="hero-map__hint-mouse">Bewege den Mauszeiger auf das Haus.</span>
+                <span class="hero-map__hint-touch">Tippe auf das Haus, um die Gewerke zu entdecken.</span>
+              </button>
+              <svg class="hero-map__zones" viewBox="0 0 1402 1122" aria-label="Leistungen im Haus entdecken">
+                <a href="/leistungen/trockenbau.html" aria-label="Trockenbau">
+                  <path class="hero-map__zone" d="M95 297 499 61 606 84 606 416 95 416Z"/>
+                  <g class="hero-map__callout" aria-hidden="true">
+                    <path d="M343 300 154 86 154 -28H358"/>
+                    <text x="256" y="-40" text-anchor="middle">Trockenbau</text>
+                  </g>
+                </a>
+                <a href="/leistungen/maler-tapezierarbeiten.html" aria-label="Maler- und Tapezierarbeiten">
+                  <path class="hero-map__zone" d="M637 90 1069 183 1069 416 637 416Z"/>
+                  <g class="hero-map__callout" aria-hidden="true">
+                    <path d="M850 303 1048 117 1048 -28H618"/>
+                    <text x="833" y="-40" text-anchor="middle">Maler- und Tapezierarbeiten</text>
+                  </g>
+                </a>
+                <a href="/leistungen/badsanierung.html" aria-label="Badsanierung">
+                  <path class="hero-map__zone" d="M108 438H514V744H108Z"/>
+                  <g class="hero-map__callout" aria-hidden="true">
+                    <path d="M309 596 24 693 24 1162H249"/>
+                    <text x="136" y="1150" text-anchor="middle">Badsanierung</text>
+                  </g>
+                </a>
+                <a href="/leistungen/sanierung.html" aria-label="Sanierung">
+                  <path class="hero-map__zone" d="M541 438H1078V744H541Z"/>
+                  <g class="hero-map__callout" aria-hidden="true">
+                    <path d="M800 595 1006 779 1006 1162H1210"/>
+                    <text x="1108" y="1150" text-anchor="middle">Sanierung</text>
+                  </g>
+                </a>
+                <a href="/leistungen/balkon.html" aria-label="Balkon">
+                  <path class="hero-map__zone" d="M1092 598H1372V725L1293 782H1092Z"/>
+                  <g class="hero-map__callout" aria-hidden="true">
+                    <path d="M1230 680 1281 837 1281 902H1383"/>
+                    <text x="1332" y="890" text-anchor="middle">Balkon</text>
+                  </g>
+                </a>
+                <a href="/leistungen/fliesenlegen.html" aria-label="Fliesen &amp; Bodenbeläge">
+                  <path class="hero-map__zone" d="M105 768H1073V1080H105Z"/>
+                  <g class="hero-map__callout" aria-hidden="true">
+                    <path d="M756 952 652 1162H299"/>
+                    <text x="475" y="1150" text-anchor="middle">Fliesen &amp; Bodenbeläge</text>
+                  </g>
+                </a>
+              </svg>
+              <div class="hero-map__mobile-labels" aria-hidden="true">
+                <span class="hero-map__glass" style="--zone-x:24.47%; --zone-y:26.74%">Trockenbau</span>
+                <span class="hero-map__glass" style="--zone-x:60.63%; --zone-y:27.01%">Maler &amp; Tapete</span>
+                <span class="hero-map__glass" style="--zone-x:22.04%; --zone-y:53.12%">Bad</span>
+                <span class="hero-map__glass" style="--zone-x:57.06%; --zone-y:53.03%">Sanierung</span>
+                <span class="hero-map__glass" style="--zone-x:87.73%; --zone-y:60.61%">Balkon</span>
+                <span class="hero-map__glass" style="--zone-x:53.92%; --zone-y:84.85%">Fliesen &amp; Boden</span>
+              </div>
+              <a class="hero-map__owner" href="/ueber-uns.html" aria-label="Über uns – Robert Palumbo kennenlernen">
+                <img src="/images/hero/inhaber-hero.png" alt="" width="267" height="400">
+                <span class="hero-map__glass" aria-hidden="true">Über uns</span>
+              </a>
+            </div>
+            <figcaption class="showcase__caption">
+              <span>Wähle einen Raum, den Balkon oder Robert.</span>
+              <span>KI-generierte Visualisierung</span>
+            </figcaption>
+          </figure>
+          <nav class="hero-map__links" aria-label="Leistungen und Inhaber">
+            <ul>
+              <li><a href="/leistungen/trockenbau.html">Trockenbau</a></li>
+              <li><a href="/leistungen/maler-tapezierarbeiten.html">Maler- und Tapezierarbeiten</a></li>
+              <li><a href="/leistungen/badsanierung.html">Badsanierung</a></li>
+              <li><a href="/leistungen/sanierung.html">Sanierung</a></li>
+              <li><a href="/leistungen/balkon.html">Balkon</a></li>
+              <li><a href="/leistungen/fliesenlegen.html">Fliesen &amp; Bodenbeläge</a></li>
+              <li><a href="/ueber-uns.html">Über uns</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="container">
+        <ul class="showcase__facts" aria-label="RP-Bau auf einen Blick">
+          <li>Meisterbetrieb in Wiesloch</li>
+          <li>20 Jahre Handwerkserfahrung</li>
+          <li>Ein Ansprechpartner bis zur Abnahme</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section work-index" id="leistungen">
+      <div class="container work-index__layout">
+        <div>
+          <h2>Was hast du vor?</h2>
+          <p>Vom neuen Boden bis zur Sanierung mehrerer Räume. Wähle die Leistung, die zu deinem Vorhaben passt.</p>
+        </div>
+        <ul class="work-index__list">
+          <li><a href="/leistungen/fliesenlegen.html"><strong>Fliesen &amp; Bodenbeläge</strong><span>Wand- und Bodenfliesen, Laminat</span></a></li>
+          <li><a href="/leistungen/sanierung.html"><strong>Sanierung</strong><span>Räume und Objekte modernisieren</span></a></li>
+          <li><a href="/leistungen/badsanierung.html"><strong>Badsanierung</strong><span>Vom Rückbau bis zum fertigen Bad</span></a></li>
+          <li><a href="/leistungen/maler-tapezierarbeiten.html"><strong>Maler- und Tapezierarbeiten</strong><span>Wände und Decken gestalten</span></a></li>
+          <li><a href="/leistungen/trockenbau.html"><strong>Trockenbau</strong><span>Wände und Decken neu aufteilen</span></a></li>
+          <li><a href="/leistungen/balkon.html"><strong>Balkon</strong><span>Balkonflächen und Beton instand setzen</span></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section portfolio-strip">
+      <div class="container">
+        <div class="portfolio-strip__heading">
+          <h2>So sieht das Ergebnis aus.</h2>
+          <a href="/galerie.html" class="text-link">Alle Referenzen ansehen</a>
+        </div>
+        <div class="portfolio-strip__projects">
+          <a href="/galerie.html#fliesenlegen">
+            <img src="/images/leistungen/fliesenlegen/galerie/Laminat.jpg" alt="Heller Laminatboden in einem Raum mit Balkontür" width="900" height="1600" loading="lazy">
+            <span>Laminatboden</span>
+          </a>
+          <a href="/galerie.html#trockenbau">
+            <img src="/images/leistungen/trockenbau/nachher-1.jpg" alt="Renovierter Flur mit weißen Wänden und Deckenspots" width="923" height="1600" loading="lazy">
+            <span>Trockenbau im Flur</span>
+          </a>
+          <a href="/galerie.html#badsanierung">
+            <img src="/images/leistungen/badsanierung/nachher-1.jpg" alt="Saniertes Gäste-WC mit grauen Fliesen und Wand-WC" width="900" height="1600" loading="lazy">
+            <span>Gäste-WC nach der Sanierung</span>
+          </a>
         </div>
       </div>
     </section>
 
-    <section class="section section--dark">
-      <div class="container">
-        <h2>Vorher / Nachher</h2>
-        <p>Einblicke in ausgeführte Arbeiten.</p>
-        <a href="/galerie.html" class="btn btn--primary">Zur Galerie</a>
+    <section class="section owner-story">
+      <div class="container owner-story__layout">
+        <img src="/images/ueber-uns/robert-palumbo-web.jpg" alt="Robert Palumbo, Inhaber von RP-Bau" width="600" height="750" loading="lazy">
+        <div>
+          <h2>Dein Ansprechpartner.<br>Robert Palumbo.</h2>
+          <p>Als Fliesenlegermeister bespricht Robert dein Vorhaben persönlich und begleitet es vom ersten Gespräch bis zur Abnahme.</p>
+          <ol class="owner-story__steps">
+            <li><strong>Anfrage</strong><span>Du beschreibst dein Vorhaben und nennst den Ort.</span></li>
+            <li><strong>Besprechung</strong><span>Wir klären Umfang und Wünsche, bei Bedarf vor Ort.</span></li>
+            <li><strong>Angebot</strong><span>Du erhältst ein verständlich aufgeschlüsseltes Angebot.</span></li>
+            <li><strong>Umsetzung</strong><span>Wir stimmen die Termine ab und setzen die Arbeiten um.</span></li>
+          </ol>
+          <a href="/ueber-uns.html" class="text-link">Mehr über Robert und RP-Bau</a>
+        </div>
       </div>
     </section>
 
-    <section class="section" id="kontakt">
-      <div class="container">
-        <h2>Projekt anfragen</h2>
-        <p>RP-Bau, Blenkenweg 30, 69234 Wiesloch · <a href="tel:017676897808">0176 / 76897808</a> · <a href="mailto:anfrage@rp-bau.info">anfrage@rp-bau.info</a></p>
-        <form id="contact-form" class="contact-form" novalidate>
+    <section class="section inquiry" id="kontakt" aria-labelledby="inquiry-title">
+      <div class="container inquiry__layout">
+        <div class="inquiry__intro">
+          <h2 id="inquiry-title">Erzähl uns von<br>deinem Projekt.</h2>
+          <p>Ein paar Sätze zum Vorhaben und zum Projektort reichen für den ersten Kontakt. Fotos kannst du direkt anhängen.</p>
+          <a class="text-link" href="tel:017676897808">0176 / 76897808</a>
+          <a class="text-link" href="https://wa.me/4917676897808" data-wa-link>Per WhatsApp schreiben</a>
+        </div>
+        <form id="contact-form" class="contact-form">
           <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
           <div class="form-group">
             <label for="name">Name *</label>
-            <input id="name" name="name" type="text" required autocomplete="name">
+            <input id="name" name="name" type="text" required maxlength="200" autocomplete="name">
           </div>
           <div class="form-group">
             <label for="contact">E-Mail oder Telefon *</label>
-            <input id="contact" name="contact" type="text" required autocomplete="email">
-          </div>
-          <div class="form-group">
-            <label for="service">Leistung</label>
-            <select id="service" name="service">
-              <option value="">Bitte wählen</option>
-              <option>Fliesenlegen</option>
-              <option>Sanierung</option>
-              <option>Badsanierung</option>
-              <option>Maler- und Tapezierarbeiten</option>
-              <option>Trockenbau</option>
-              <option>Balkon</option>
-              <option>Mehrere Gewerke</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="location">PLZ / Ort</label>
-            <input id="location" name="location" type="text" autocomplete="postal-code">
+            <input id="contact" name="contact" type="text" required maxlength="200">
           </div>
           <div class="form-group">
             <label for="message">Nachricht *</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+            <textarea id="message" name="message" rows="4" maxlength="5000" placeholder="Zum Beispiel: neuer Boden für 40 m² in Wiesloch" required></textarea>
           </div>
           <div class="form-group">
             <label for="photos">Fotos (optional, bis zu 5)</label>
@@ -187,7 +271,7 @@
     <div class="container">
       <div class="site-footer__grid">
         <div>
-          <img src="/images/logo/logo.png" alt="RP-Bau" width="140" height="38">
+          <img src="/images/logo/logo-web.png" alt="RP-Bau" width="140" height="38">
           <p>RP-Bau · Robert Palumbo<br>Fliesenlegermeister<br>Blenkenweg 30, 69234 Wiesloch</p>
         </div>
         <div>
@@ -196,7 +280,7 @@
         </div>
         <div>
           <p class="site-footer__title">Leistungen</p>
-          <ul class="site-footer__links"><li><a href="/leistungen/fliesenlegen.html">Fliesenlegen</a></li><li><a href="/leistungen/sanierung.html">Sanierung</a></li><li><a href="/leistungen/badsanierung.html">Badsanierung</a></li><li><a href="/leistungen/maler-tapezierarbeiten.html">Maler- und Tapezierarbeiten</a></li><li><a href="/leistungen/trockenbau.html">Trockenbau</a></li><li><a href="/leistungen/balkon.html">Balkon</a></li></ul>
+          <ul class="site-footer__links"><li><a href="/leistungen/fliesenlegen.html">Fliesen &amp; Bodenbeläge</a></li><li><a href="/leistungen/sanierung.html">Sanierung</a></li><li><a href="/leistungen/badsanierung.html">Badsanierung</a></li><li><a href="/leistungen/maler-tapezierarbeiten.html">Maler- und Tapezierarbeiten</a></li><li><a href="/leistungen/trockenbau.html">Trockenbau</a></li><li><a href="/leistungen/balkon.html">Balkon</a></li></ul>
         </div>
       </div>
       <ul class="site-footer__legal">
@@ -210,23 +294,20 @@
   <div class="sticky-cta" aria-label="Schnellkontakt">
     <a href="tel:017676897808">Anrufen</a>
     <a class="wa-link-icon" href="https://wa.me/4917676897808?text=Guten%20Tag%2C%20ich%20m%C3%B6chte%20ein%20Projekt%20anfragen." data-wa-link><img src="/images/icons/whatsapp.svg" alt="" width="20" height="20" aria-hidden="true" loading="lazy" referrerpolicy="no-referrer"><span>WhatsApp</span></a>
-    <a href="#kontakt">Anfrage</a>
+    <a href="#kontakt">Projekt anfragen</a>
   </div>
 
   <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Cookie-Einstellungen" aria-live="polite">
     <div class="container">
-      <p>Diese Website verwendet nur technisch notwendige Speicherungen (z. B. für deine Cookie-Auswahl). Mehr dazu in der <a href="/datenschutz.html">Datenschutzerklärung</a>.</p>
+      <p>Diese Website verwendet nur technisch notwendige Speicherungen. <a href="/datenschutz.html">Datenschutz</a></p>
       <div class="cookie-banner__actions">
-        <button type="button" class="btn btn--primary" data-consent="all">Alle akzeptieren</button>
-        <button type="button" class="btn btn--secondary" data-consent="necessary">Nur notwendige</button>
-        <a href="/cookie-einstellungen.html" class="btn btn--outline">Einstellungen</a>
+        <button type="button" class="btn btn--primary" data-consent="necessary">Verstanden</button>
       </div>
     </div>
   </div>
 
-  <script type="module" src="/js/main.js"></script>
-  <script type="module" src="/js/hero.js"></script>
+  <script type="module" src="/js/main.js?v=4"></script>
   <script type="module" src="/js/consent.js"></script>
-  <script type="module" src="/js/contact-form.js"></script>
+  <script type="module" src="/js/contact-form.js?v=2"></script>
 </body>
 </html>

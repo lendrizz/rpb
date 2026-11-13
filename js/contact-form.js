@@ -5,6 +5,15 @@ const MAX_TOTAL_BYTES = 3_000_000; // Vercel erlaubt ca. 4,5 MB pro Anfrage; Bas
 const QUALITY_STEPS = [[1600, 0.8], [1280, 0.7], [1024, 0.6]];
 
 const form = document.getElementById('contact-form');
+const serviceNames = new Map([
+  ['fliesenlegen', 'Fliesen & Bodenbeläge'],
+  ['sanierung', 'Sanierung'],
+  ['badsanierung', 'Badsanierung'],
+  ['maler-tapezierarbeiten', 'Maler- und Tapezierarbeiten'],
+  ['trockenbau', 'Trockenbau'],
+  ['balkon', 'Balkon']
+]);
+const selectedService = serviceNames.get(new URLSearchParams(window.location.search).get('leistung'));
 
 async function loadBitmap(file) {
   try {
@@ -61,6 +70,9 @@ async function preparePhotos(files) {
 }
 
 if (form) {
+  if (selectedService && !form.elements.message.value) {
+    form.elements.message.value = `Mein Projekt: ${selectedService}\n\n`;
+  }
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const status = document.getElementById('form-status');
@@ -70,8 +82,13 @@ if (form) {
     const data = Object.fromEntries(fd.entries());
     const files = Array.from(form.querySelector('#photos')?.files || []);
 
+    data.name = data.name?.trim();
+    data.contact = data.contact?.trim();
+    data.message = data.message?.trim();
+    if (selectedService) data.service = selectedService;
+
     if (data.website) return; // honeypot
-    if (!data.name || !data.contact || !data.message || !data.privacy) {
+    if (!data.name || !data.contact || !data.message || data.message === `Mein Projekt: ${selectedService}` || !data.privacy) {
       if (status) status.textContent = 'Bitte fülle alle Pflichtfelder aus.';
       return;
     }
