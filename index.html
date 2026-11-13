@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="/css/base.css?v=nav1">
   <link rel="stylesheet" href="/css/components.css?v=nav1">
   <link rel="stylesheet" href="/css/pages.css?v=nav1">
-  <link rel="stylesheet" href="/css/design.css?v=nav1">
+  <link rel="stylesheet" href="/css/design.css?v=hero2">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -81,7 +81,10 @@
         <div class="showcase__project">
           <figure>
             <div class="hero-map">
-              <img class="hero-map__house" src="/images/hero/hausquerschnitt-fotorealistisch.jpg" alt="Hausquerschnitt mit ausgebautem Dachgeschoss, Bad, Wohnraum, Balkon und gefliestem Eingang" width="1402" height="1122" fetchpriority="high">
+              <picture>
+                <source media="(max-width: 950px)" srcset="/images/hero/hero-mobil.png" width="937" height="1679">
+                <img class="hero-map__house" src="/images/hero/hero-quer.png" alt="Hausquerschnitt mit sechs Handwerksbereichen und mittigem Eingang" width="1677" height="938" fetchpriority="high">
+              </picture>
               <button class="hero-map__hint" type="button" hidden>
                 <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                   <path d="M8 13V4a1.5 1.5 0 0 1 3 0v7-2a1.5 1.5 0 0 1 3 0v2-1a1.5 1.5 0 0 1 3 0v2a1.5 1.5 0 0 1 3 0v4a6 6 0 0 1-6 6h-1a5 5 0 0 1-4-2l-4.5-6a1.5 1.5 0 0 1 2.3-1.9L8 13Z"/>
@@ -89,57 +92,85 @@
                 <span class="hero-map__hint-mouse">Bewege den Mauszeiger auf das Haus.</span>
                 <span class="hero-map__hint-touch">Tippe auf das Haus, um die Gewerke zu entdecken.</span>
               </button>
-              <svg class="hero-map__zones" viewBox="0 0 1402 1122" aria-label="Leistungen im Haus entdecken">
+              <svg class="hero-map__zones hero-map__zones--landscape" viewBox="0 0 850 475" preserveAspectRatio="none" aria-label="Leistungen im Haus entdecken">
                 <a href="/leistungen/trockenbau.html" aria-label="Trockenbau">
-                  <path class="hero-map__zone" d="M95 297 499 61 606 84 606 416 95 416Z"/>
+                  <path class="hero-map__zone" d="M99 135 215 26 470 40 472 146 310 185Z"/>
                   <g class="hero-map__callout" aria-hidden="true">
-                    <path d="M343 300 154 86 154 -28H358"/>
-                    <text x="256" y="-40" text-anchor="middle">Trockenbau</text>
+                    <path d="M287 125 185 -18H390"/>
+                    <text x="287" y="-25" text-anchor="middle">Trockenbau</text>
                   </g>
                 </a>
                 <a href="/leistungen/maler-tapezierarbeiten.html" aria-label="Maler- und Tapezierarbeiten">
-                  <path class="hero-map__zone" d="M637 90 1069 183 1069 416 637 416Z"/>
+                  <path class="hero-map__zone" d="M480 151 596 108 747 150 745 229 663 289 597 300 479 268Z"/>
                   <g class="hero-map__callout" aria-hidden="true">
-                    <path d="M850 303 1048 117 1048 -28H618"/>
-                    <text x="833" y="-40" text-anchor="middle">Maler- und Tapezierarbeiten</text>
+                    <path d="M589 192 610 38H845"/>
+                    <text x="727" y="31" text-anchor="middle">Maler- und Tapezierarbeiten</text>
                   </g>
                 </a>
                 <a href="/leistungen/badsanierung.html" aria-label="Badsanierung">
-                  <path class="hero-map__zone" d="M108 438H514V744H108Z"/>
+                  <path class="hero-map__zone" d="M97 145 310 195 371 179V269L247 306 97 275Z"/>
                   <g class="hero-map__callout" aria-hidden="true">
-                    <path d="M309 596 24 693 24 1162H249"/>
-                    <text x="136" y="1150" text-anchor="middle">Badsanierung</text>
+                    <path d="M183 223 27 280V486H158"/>
+                    <text x="93" y="479" text-anchor="middle">Badsanierung</text>
                   </g>
                 </a>
                 <a href="/leistungen/sanierung.html" aria-label="Sanierung">
-                  <path class="hero-map__zone" d="M541 438H1078V744H541Z"/>
+                  <path class="hero-map__zone" d="M479 278 596 313 741 282V397L577 455 479 402Z"/>
                   <g class="hero-map__callout" aria-hidden="true">
-                    <path d="M800 595 1006 779 1006 1162H1210"/>
-                    <text x="1108" y="1150" text-anchor="middle">Sanierung</text>
+                    <path d="M604 363 674 486H810"/>
+                    <text x="742" y="479" text-anchor="middle">Sanierung</text>
                   </g>
                 </a>
                 <a href="/leistungen/balkon.html" aria-label="Balkon">
-                  <path class="hero-map__zone" d="M1092 598H1372V725L1293 782H1092Z"/>
+                  <path class="hero-map__zone" d="M663 271 746 217 800 226 803 273 706 299 663 289Z"/>
                   <g class="hero-map__callout" aria-hidden="true">
-                    <path d="M1230 680 1281 837 1281 902H1383"/>
-                    <text x="1332" y="890" text-anchor="middle">Balkon</text>
+                    <path d="M758 252 779 180H845"/>
+                    <text x="812" y="173" text-anchor="middle">Balkon</text>
                   </g>
                 </a>
                 <a href="/leistungen/fliesenlegen.html" aria-label="Fliesen &amp; Bodenbeläge">
-                  <path class="hero-map__zone" d="M105 768H1073V1080H105Z"/>
+                  <path class="hero-map__zone" d="M97 285 247 317 366 285V402L272 451 98 398Z"/>
                   <g class="hero-map__callout" aria-hidden="true">
-                    <path d="M756 952 652 1162H299"/>
-                    <text x="475" y="1150" text-anchor="middle">Fliesen &amp; Bodenbeläge</text>
+                    <path d="M214 371 240 486H433"/>
+                    <text x="337" y="479" text-anchor="middle">Fliesen &amp; Bodenbeläge</text>
                   </g>
                 </a>
               </svg>
-              <div class="hero-map__mobile-labels" aria-hidden="true">
-                <span class="hero-map__glass" style="--zone-x:24.47%; --zone-y:26.74%">Trockenbau</span>
-                <span class="hero-map__glass" style="--zone-x:60.63%; --zone-y:27.01%">Maler &amp; Tapete</span>
-                <span class="hero-map__glass" style="--zone-x:22.04%; --zone-y:53.12%">Bad</span>
-                <span class="hero-map__glass" style="--zone-x:57.06%; --zone-y:53.03%">Sanierung</span>
-                <span class="hero-map__glass" style="--zone-x:87.73%; --zone-y:60.61%">Balkon</span>
-                <span class="hero-map__glass" style="--zone-x:53.92%; --zone-y:84.85%">Fliesen &amp; Boden</span>
+              <svg class="hero-map__zones hero-map__zones--portrait" viewBox="0 0 474 850" preserveAspectRatio="none" aria-label="Leistungen im Haus entdecken">
+                <a href="/leistungen/trockenbau.html" aria-label="Trockenbau">
+                  <path class="hero-map__zone" d="M27 265 112 141H329V274L194 345Z"/>
+                </a>
+                <a href="/leistungen/maler-tapezierarbeiten.html" aria-label="Maler- und Tapezierarbeiten">
+                  <path class="hero-map__zone" d="M238 326 338 282 420 330 417 410 354 484 239 457Z"/>
+                </a>
+                <a href="/leistungen/badsanierung.html" aria-label="Badsanierung">
+                  <path class="hero-map__zone" d="M29 277 195 357 228 340V462L134 511 29 454Z"/>
+                </a>
+                <a href="/leistungen/sanierung.html" aria-label="Sanierung">
+                  <path class="hero-map__zone" d="M263 489 324 524 422 484V618L340 679 263 627Z"/>
+                </a>
+                <a href="/leistungen/balkon.html" aria-label="Balkon">
+                  <path class="hero-map__zone" d="M355 456 425 411 462 425 465 477 389 518 355 501Z"/>
+                </a>
+                <a href="/leistungen/fliesenlegen.html" aria-label="Fliesen &amp; Bodenbeläge">
+                  <path class="hero-map__zone" d="M28 466 134 523 201 486V626L135 687 29 613Z"/>
+                </a>
+              </svg>
+              <div class="hero-map__mobile-labels hero-map__mobile-labels--landscape" aria-hidden="true">
+                <span class="hero-map__glass" style="--zone-x:33.76%; --zone-y:26.32%">Trockenbau</span>
+                <span class="hero-map__glass" style="--zone-x:69.29%; --zone-y:40.42%">Maler &amp; Tapete</span>
+                <span class="hero-map__glass" style="--zone-x:21.53%; --zone-y:46.95%">Badsanierung</span>
+                <span class="hero-map__glass" style="--zone-x:71.06%; --zone-y:76.42%">Sanierung</span>
+                <span class="hero-map__glass" style="--zone-x:89.18%; --zone-y:53.05%">Balkon</span>
+                <span class="hero-map__glass" style="--zone-x:25.18%; --zone-y:78.11%">Fliesen &amp; Boden</span>
+              </div>
+              <div class="hero-map__mobile-labels hero-map__mobile-labels--portrait" aria-hidden="true">
+                <span class="hero-map__glass" style="--zone-x:37.34%; --zone-y:28.82%">Trockenbau</span>
+                <span class="hero-map__glass" style="--zone-x:68.99%; --zone-y:43.53%">Maler &amp; Tapete</span>
+                <span class="hero-map__glass" style="--zone-x:25.11%; --zone-y:45.88%">Badsanierung</span>
+                <span class="hero-map__glass" style="--zone-x:73.00%; --zone-y:66.47%">Sanierung</span>
+                <span class="hero-map__glass" style="--zone-x:85.65%; --zone-y:54.47%">Balkon</span>
+                <span class="hero-map__glass" style="--zone-x:23.00%; --zone-y:69.18%">Fliesen &amp; Boden</span>
               </div>
               <a class="hero-map__owner" href="/ueber-uns.html" aria-label="Über uns – Robert Palumbo kennenlernen">
                 <img src="/images/hero/inhaber-hero.png" alt="" width="267" height="400">
@@ -202,7 +233,7 @@
             <span>Laminatboden</span>
           </a>
           <a href="/galerie.html#trockenbau">
-            <img src="/images/leistungen/trockenbau/nachher-1.jpg" alt="Renovierter Flur mit weißen Wänden und Deckenspots" width="923" height="1600" loading="lazy">
+            <img src="/images/leistungen/trockenbau/nachher-1.jpg?v=2" alt="Renovierter Flur mit weißen Wänden und Deckenspots" width="923" height="1600" loading="lazy">
             <span>Trockenbau im Flur</span>
           </a>
           <a href="/galerie.html#badsanierung">

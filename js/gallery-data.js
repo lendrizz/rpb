@@ -63,7 +63,7 @@ export const galleryData = [
       {
         orientation: 'portrait',
         before: '/images/leistungen/trockenbau/vorher-1.jpg',
-        after: '/images/leistungen/trockenbau/nachher-1.jpg',
+        after: '/images/leistungen/trockenbau/nachher-1.jpg?v=2',
         altBefore: 'Flur im Rohbauzustand mit freiliegenden Leitungen und Putzschäden vor dem Trockenbau',
         altAfter: 'Renovierter Flur mit glatten weißen Wänden und Decke, Einbaustrahlern und Boden in Holzoptik'
       }

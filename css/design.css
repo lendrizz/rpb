@@ -209,7 +209,7 @@ input, textarea { caret-color: var(--color-accent-ink); }
     stroke: var(--color-primary);
     stroke-width: 4;
     paint-order: stroke;
-    font: 700 30px var(--font-body);
+    font: 700 16px var(--font-body);
   }
 }
 
@@ -222,9 +222,10 @@ input, textarea { caret-color: var(--color-accent-ink); }
 .hero-map__owner {
   position: absolute;
   z-index: 1;
-  left: 21.8%;
-  bottom: 10.1%;
-  width: 9.5%;
+  left: 49.9%;
+  transform: translateX(-50%);
+  bottom: 15.8%;
+  width: 7%;
   min-width: 44px;
   display: grid;
   justify-items: center;
@@ -464,4 +465,19 @@ main.document-page h2 { font-size: clamp(1.55rem, 3vw, 2.2rem); }
     text-decoration: none;
   }
   .hero-map__links a:hover { border-color: var(--color-accent); color: var(--color-accent); }
+}
+
+
+.hero-map__zones--portrait { display: none; }
+
+@media (max-width: 950px) {
+  .hero-map__zones--landscape,
+  .hero-map__mobile-labels--landscape { display: none; }
+  .hero-map__zones--portrait { display: block; }
+  .hero-map__owner { left: 48.3%; bottom: 25.8%; width: 9%; min-width: 38px; }
+  .showcase__project { width: min(100%, 460px); margin-inline: auto; }
+}
+
+@media (min-width: 951px) {
+  .hero-map__mobile-labels--portrait { display: none; }
 }
