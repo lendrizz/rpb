@@ -1,23 +1,5 @@
 /* css/base.css */
 
-/* Schriften: lokale WOFF2-Dateien in /fonts ablegen (siehe fonts/README.txt).
-   Fehlen die Dateien, greifen die Fallbacks aus tokens.css. */
-@font-face {
-  font-family: 'Fraunces';
-  src: local('Fraunces'), url('../fonts/Fraunces-Variable.woff2') format('woff2');
-  font-weight: 100 900;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Source Sans 3';
-  src: local('Source Sans 3'), local('SourceSans3'), url('../fonts/SourceSans3-Variable.woff2') format('woff2');
-  font-weight: 200 900;
-  font-display: swap;
-  font-style: normal;
-}
-
 *, *::before, *::after {
   box-sizing: border-box;
 }

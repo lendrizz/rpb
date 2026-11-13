@@ -10,7 +10,7 @@ export function initNav() {
   const nav = document.querySelector('.site-nav');
   if (!nav) return;
 
-  const desktop = window.matchMedia('(min-width: 769px)');
+  const desktop = window.matchMedia('(min-width: 900px)');
   const canHover = window.matchMedia('(hover: hover)');
 
   // Aktuelle Seite markieren (ohne Anker-Links wie "Anfrage")
@@ -86,4 +86,28 @@ export function initNav() {
 
 document.addEventListener('DOMContentLoaded', () => {
   initNav();
+
+  const hint = document.querySelector('.hero-map__hint');
+  if (!hint) return;
+
+  const house = hint.parentElement;
+  const dismiss = () => {
+    hint.remove();
+    house.removeEventListener('pointerenter', handlePointer);
+    house.removeEventListener('focusin', handleFocus);
+  };
+  const handlePointer = (event) => {
+    if (event.pointerType === 'mouse') dismiss();
+  };
+  const handleFocus = (event) => {
+    if (event.target !== hint) dismiss();
+  };
+
+  hint.hidden = false;
+  house.addEventListener('pointerenter', handlePointer);
+  house.addEventListener('focusin', handleFocus);
+  hint.addEventListener('click', (event) => {
+    dismiss();
+    if (event.detail === 0) house.querySelector('.hero-map__zones a')?.focus();
+  });
 });

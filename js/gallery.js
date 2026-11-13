@@ -111,8 +111,10 @@ if (root) {
     return `
     <section class="gallery-section" id="${group.id}">
       <h2>${esc(group.title)}</h2>
-      ${group.items.map((item, i) => compareHtml(group, item, i)).join('')}
-      ${photosHtml(group, photos)}
+      <div class="gallery-project${photos.length ? ' gallery-project--with-photos' : ''}">
+        <div>${group.items.map((item, i) => compareHtml(group, item, i)).join('')}</div>
+        ${photos.length ? `<div>${photosHtml(group, photos)}</div>` : ''}
+      </div>
     </section>`;
   }).join('');
   initCompareSliders(root);
