@@ -1,4 +1,11 @@
 {
+  "redirects": [
+    {
+      "source": "/handwerker-wiesloch.html",
+      "destination": "/handwerker-dielheim.html",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",

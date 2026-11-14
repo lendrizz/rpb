@@ -7,15 +7,15 @@ export const config = {
     legalName: "RP-Bau",
     owner: "Robert Palumbo",
     form: "Einzelunternehmen",
-    profession: "Fliesenlegermeister",
+    profession: "Inhaber von RP-Bau",
     slogan: "Handwerker des Vertrauens. Seit 20 Jahren.",
     yearsExperience: 20
   },
   address: {
     street: "Blenkenweg 30",
     zip: "69234",
-    city: "Wiesloch",
-    area: "100 km um Wiesloch"
+    city: "Dielheim",
+    area: "100 km um Dielheim"
   },
   contact: {
     phone: "017676897808",
