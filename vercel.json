@@ -29,7 +29,7 @@
       "headers": [
         {
           "key": "Content-Security-Policy",
-          "value": "frame-ancestors https://lensonconsulting.de https://lenson-cinematic-preview.vercel.app https://lenson-cinematic-preview-git-feature-cinematic-coast-lenson2.vercel.app http://127.0.0.1:4181"
+          "value": "frame-ancestors https://lensonconsulting.de https://lenson-cinematic-preview.vercel.app https://lenson-cinematic-preview-git-feature-cinematic-coast-lenson2.vercel.app https://lenson-cinematic-preview-git-feature-cinematic-homepage-lenson2.vercel.app http://127.0.0.1:4181"
         }
       ]
     },
